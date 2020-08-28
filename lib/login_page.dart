@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_app/dashboard.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -54,7 +55,9 @@ class _LoginPageState extends State<LoginPage> {
           color: Colors.black87,
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
-          onPressed: () => {},
+          onPressed: () => {
+            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Dashboard()));
+          },
         ),
       ),
     );
